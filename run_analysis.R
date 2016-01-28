@@ -96,7 +96,7 @@ aggregatedData <- aggregate(mergedDataExcludingActivityType[, colnames(mergedDat
 finalData <- merge(activityLabelData, aggregatedData, by = "activityID")
 
 ## Writing The Data to the file
-write.table(finalData, "./CourseProject/tidyData.txt", row.names = TRUE, sep = "\t")
+write.table(finalData, "./CourseProject/tidyData.txt", row.names = FALSE, sep = "\t")
 
 
 
